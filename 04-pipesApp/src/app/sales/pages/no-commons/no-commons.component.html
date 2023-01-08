@@ -72,4 +72,13 @@
             <pre>{{ name | slice:0:3 }}</pre>
         </p-fieldset>
     </div>
+
+    <div class="col-6">
+        <p-fieldset legend="KeyValue Pipe"
+                    [toggleable]="true">
+            <div *ngFor="let item of person | keyvalue">
+                <b>{{ item.key }}</b>: {{ item.value }}
+            </div>
+        </p-fieldset>
+    </div>
 </div>

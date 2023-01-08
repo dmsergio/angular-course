@@ -30,6 +30,13 @@ export class NoCommonsComponent implements OnInit {
     'other': 'tenemos # clientes esperando',
   }
 
+  // keyValue pipe
+  person = {
+    name: 'Sergio',
+    age: 33,
+    address: 'Valencia, Spain',
+  }
+
   constructor() { }
 
   ngOnInit(): void { }
