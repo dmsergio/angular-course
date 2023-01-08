@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicsComponent implements OnInit {
 
+  nameLowercase: string = 'sergio';
+  nameUpper: string = 'SERGIO';
+  nameFull: string = 'sErGiO dIaZ';
+
   constructor() { }
 
   ngOnInit(): void {
