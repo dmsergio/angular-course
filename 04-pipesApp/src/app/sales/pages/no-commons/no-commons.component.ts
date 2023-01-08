@@ -6,6 +6,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoCommonsComponent implements OnInit {
 
+  name: string = 'Sergio';
+  gender: string = 'male';
+
+  genderMap = {
+    'male': 'invitarlo',
+    'female': 'invitarla',
+  }
+
   constructor() { }
 
   ngOnInit(): void { }
