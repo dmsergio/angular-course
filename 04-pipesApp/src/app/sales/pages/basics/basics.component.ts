@@ -10,6 +10,8 @@ export class BasicsComponent implements OnInit {
   nameUpper: string = 'SERGIO';
   nameFull: string = 'sErGiO dIaZ';
 
+  currentDate: Date = new Date();
+
   constructor() { }
 
   ngOnInit(): void {

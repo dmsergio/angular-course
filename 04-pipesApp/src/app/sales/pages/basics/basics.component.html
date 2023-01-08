@@ -26,3 +26,33 @@
     </div>
 </div>
 
+<div class="text-layout">
+    <h1>Date Pipe</h1>
+    <p>
+        Pipe to manage date and datetime values
+    </p>
+</div>
+<div class="grid">
+    <div class="col-4">
+        <p-card>
+            <ul>
+                <li>currentDate</li>
+                <li>currentDate | date</li>
+                <li>currentDate | date:'short'</li>
+                <li>currentDate | date:'long'</li>
+                <li>currentDate | date:'d-M-yyyy HH:mm'</li>
+            </ul>
+        </p-card>
+    </div>
+    <div class="col-8">
+        <p-card>
+            <ul>
+                <li>{{ currentDate }}</li>
+                <li>{{ currentDate | date }}</li>
+                <li>{{ currentDate | date:'short' }}</li>
+                <li>{{ currentDate | date:'long' }}</li>
+                <li>{{ currentDate | date:'d-M-yyyy HH:mm' }}</li>
+            </ul>
+        </p-card>
+    </div>
+</div>
