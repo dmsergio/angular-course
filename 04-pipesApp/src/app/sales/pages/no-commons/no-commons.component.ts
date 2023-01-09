@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-commons',
@@ -36,6 +37,15 @@ export class NoCommonsComponent implements OnInit {
     age: 33,
     address: 'Valencia, Spain',
   }
+
+  // Async pipe
+  myObservable = interval(3000);
+
+  myPromise = new Promise( (resolve, reject) => {
+    setTimeout( () => {
+      resolve( 'Promise resolved!' );
+    }, 3500 );
+  } );
 
 
   constructor() { }
