@@ -37,6 +37,7 @@ export class NoCommonsComponent implements OnInit {
     address: 'Valencia, Spain',
   }
 
+
   constructor() { }
 
   ngOnInit(): void { }
